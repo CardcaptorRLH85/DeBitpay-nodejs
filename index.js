@@ -1,7 +1,6 @@
 require('dotenv').config()
 const express = require('express')
 const app = express()
-const bodyParser = require('body-parser')
 const hbs = require('hbs')
 const hbsLayouts = require('handlebars-layouts')
 const hbsHelpers = require('./lib/hbsHelpers')
@@ -21,8 +20,9 @@ app.use('/static', express.static('static', {
   fallthrough: false
 }))
 
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({ extended: true }))
+// Use Express's built-in parsers instead of body-parser
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
 
 app.set('view engine', 'hbs')
 

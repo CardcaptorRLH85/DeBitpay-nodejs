@@ -14,7 +14,7 @@ Use this edition of DeBitpay if you want to enable the hash verification skipped
 
 ## Install
 
-1. [Download DeBitpay - NodeJS edition](https://github.com/alexk111/DeBitpay-nodejs/archive/master.zip) from GitHub.
+1. [Download DeBitpay - NodeJS edition](https://github.com/CardcaptorRLH85/DeBitpay-nodejs/archive/master.zip) from GitHub.
 2. Unpack the downloaded zip and install dependencies:
 
 ```
@@ -41,4 +41,4 @@ To change the host/port, modify the host/port values in the *.env* file.
 
 ## License
 
-MIT © Alex Kaul
+MIT © Alex Kaul & Raa'Shaun Hunter
